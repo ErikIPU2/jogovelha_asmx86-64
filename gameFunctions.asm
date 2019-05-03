@@ -244,6 +244,7 @@ section .text
             jne .repeat
             mov byte[r14 + rax], -1
             mov byte[turn], 1
+            inc byte[plays]
             pop r14
             ret
 
